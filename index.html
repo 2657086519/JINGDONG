@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 引入jquery -->
+    <script src="js/jquery.js"></script>
+    <!-- 引入css文件 -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- 引入主页的js文件 -->
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- 顶层标签开始 -->
+        <div class="box1">
+            <div class="header_title w">
+                <div class="left">
+                    <img src="img/header_home.png" alt="">
+                    <span>河北</span>
+                </div>
+                <div class="right">
+                    <span>你好，请登录</span>
+                    <a>免费注册</a>
+                    <span>|</span>
+                    <span>我的订单</span>
+                    <span>|</span>
+                    <span class="active">
+                        我的京东<img src="img/header_Down.png" alt="">
+                        <div class="drop_down">
+                            <div>
+                                <span>待处理订单</span>
+                                <span>消息</span>
+                            </div>
+                            <div>
+                                <span>拆修退换货</span>
+                                <span>我的问题</span>
+                            </div>
+                            <div>
+                                <span>我的关注</span>
+                                <span>降价商品</span>
+                            </div>
+                            <div>
+                                <span>我的京豆</span>
+                                <span>我的优惠券</span>
+                            </div>
+                            <div>
+                                <span>我的订单</span>
+                                <span>我的我的</span>
+                            </div>
+                        </div>
+                    </span>
+                    <span>|</span>
+                    <span>京东会员</span>
+                    <span>|</span>
+                    <span style="color: #e1251b;" class="active">
+                        企业采购<img src="img/header_Down.png" alt="">
+                        <div class="drop_down_2">
+                            <div>
+                                <span>待处理</span>
+                                <span>消息</span>
+                            </div>
+                            <div>
+                                <span>拆修退</span>
+                                <span>我的问题</span>
+                            </div>
+                            <div>
+                                <span>我的关</span>
+                                <span>降价商品</span>
+                            </div>
+                        </div>
+                    </span>
+                    <span>|</span>
+                    <span class="active">
+                        客户服务<img src="img/header_Down.png" alt="">
+                        <div class="drop_down_3">
+                            <div>
+                                <span>待处理</span>
+                                <span>消息</span>
+                            </div>
+                            <div>
+                                <span>拆修退</span>
+                                <span>我的问题</span>
+                            </div>
+                            <div>
+                                <span>我的关</span>
+                                <span>降价商品</span>
+                            </div>
+                            <div>
+                                <span>待处理</span>
+                                <span>消息</span>
+                            </div>
+                            <div>
+                                <span>拆修退</span>
+                                <span>我的问题</span>
+                            </div>
+                            <div>
+                                <span>我的关</span>
+                                <span>降价商品</span>
+                            </div>
+                        </div>
+                    </span>
+                    <span>|</span>
+                    <span class="active">
+                        网址导航<img src="img/header_Down.png" alt="">
+                        <div class="drop_down_4">
+                            <p>我是网站导航</p>
+                        </div>
+                    </span>
+                    <span>|</span>
+                    <span>手机京东</span>
+                </div>
+            </div>
+        </div>
+        <!-- 顶层标签结束 -->
+        <!-- 搜索框模块开始 -->
+        <div class="box2">
+            <div class="header_searchBlock w">
+                <div class="left">
+                    <img src="img/header_logo.png" alt="">
+                </div>
+                <div class="center">
+                    <div class="search_top">
+                        <div>
+                            <div class="search">
+                                <input type="text" name="" id="">
+                                <img src="img/header_camera.png" alt="">
+                                <div>
+                                    <img src="img/header_search.png" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/header_car.png" alt="">
+                                我的购物车
+                            </div>
+                        </div>
+                        <div>
+                            <a>爆款降千元</a>
+                            <span>国际大牌</span>
+                            <span>特价水洗</span>
+                            <span>运动户外</span>
+                            <span>满千减白</span>
+                            <span>黑五感恩</span>
+                            <span>OLED电视</span>
+                            <span>热门微单</span>
+                            <span>黑五美妆</span>
+                        </div>
+                    </div>
+                    <div class="search_bot">
+                        <a>秒杀</a>
+                        <a>优惠券</a>
+                        <span>PLUS会员</span>
+                        <span>品牌闪购</span>
+                        <span>拍卖</span>
+                        <span>京东家电</span>
+                        <span>京东超市</span>
+                        <span>京东生鲜</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="img/header_QR_1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- 搜索框模块结束 -->
+    </header>
+    <!-- 主题内容开始 -->
+    <section>
+        <!-- 第一个模块 -->
+        <div class="box1">
+            <div class="main_block w">
+                <div class="left">
+                    <div><span>家用电器</span></div>
+                    <div>
+                        <span>手机</span>
+                        /
+                        <span>运营商</span>
+                        /
+                        <span>数码</span>
+                    </div>
+                    <div>
+                        <span>电脑</span>
+                        /
+                        <span>办公</span>
+                    </div>
+                    <div>
+                        <span>家居</span>/
+                        <span>家具</span>/
+                        <span>家装</span>/
+                        <span>厨具</span>
+                    </div>
+                    <div>
+                        <span>男装</span>/
+                        <span>女装</span>/
+                        <span>重装</span>/
+                        <span>内衣</span>
+                    </div>
+                    <div>
+                        <span>美妆</span>/
+                        <span>个护清洁</span>/
+                        <span>宠物</span>
+                    </div>
+                    <div>
+                        <span>女鞋</span>/
+                        <span>箱包</span>/
+                        <span>钟表</span>/
+                        <span>珠宝</span>
+                    </div>
+                    <div>
+                        <span>男鞋</span>/
+                        <span>运动</span>/
+                        <span>户外</span>
+                    </div>
+                    <div>
+                        <span>房产</span>/
+                        <span>汽车</span>/
+                        <span>汽车用品</span>
+                    </div>
+                    <div>
+                        <span>母婴</span>/
+                        <span>玩具乐器</span>
+                    </div>
+                    <div>
+                        <span>食品</span>/
+                        <span>酒类</span>/
+                        <span>生鲜</span>/
+                        <span>特产</span>
+                    </div>
+                    <div>
+                        <span>艺术</span>/
+                        <span>礼品鲜花</span>/
+                        <span>农资绿植</span>
+                    </div>
+                    <div>
+                        <span>医药保健</span>/
+                        <span>计生情趣</span>
+                    </div>
+                    <div>
+                        <span>图书</span>/
+                        <span>文娱</span>/
+                        <span>教育</span>/
+                        <span>电子书</span>
+                    </div>
+                    <div>
+                        <span>机票</span>/
+                        <span>酒店</span>/
+                        <span>旅游</span>/
+                        <span>生活</span>
+                    </div>
+                    <div>
+                        <span>理财</span>/
+                        <span>众筹</span>/
+                        <span>白条</span>/
+                        <span>保险</span>
+                    </div>
+                    <div>
+                        <span>安装</span>/
+                        <span>维修</span>/
+                        <span>清洗</span>/
+                        <span>二手</span>
+                    </div>
+                    <div>
+                        <span>工业品</span>
+                    </div>
+                </div>
+                <div class="center">
+                    <span class="prve">
+                        左
+                    </span>
+                    <span class="next">
+                        右
+                    </span>
+                    <div class="banner">
+                        <img src="//img20.360buyimg.com/pop/s590x470_jfs/t1/130176/19/16851/86615/5fbb1a08Ef7cc3fae/ea3280f54610098f.jpg.webp"
+                            alt="" style="display: block;">
+                        <img src="//img10.360buyimg.com/pop/s590x470_jfs/t1/145531/31/15286/80008/5fba56caE54374786/66a8112ccf9eaece.jpg.webp"
+                            alt="">
+                        <img src="//img30.360buyimg.com/da/s590x470_jfs/t1/137523/23/17205/87097/5fbd386aEb95b1c2a/524e25eb23c05b12.jpg.webp"
+                            alt="">
+                        <img src="//imgcps.jd.com/ling4/7443197/5Y6o5oi_5Y2r5rW054uC6LSt/5q-P5ruhNDAw5YePNTA/p-5bd8253082acdd181d02fa55/24398658/cr/s/q.jpg"
+                            alt="">
+                        <img src="//img14.360buyimg.com/da/s590x470_jfs/t1/140892/18/15622/64863/5fbd763aE139b5e93/42ec730cdb6117c1.jpg.webp"
+                            alt="">
+                        <img src="//imgcps.jd.com/ling4/100004050617/5YGl5bq35oiQ6ZW_5aW95pyL5Y-L/54iG5qy-5L2O6IezOS45/p-5bd8253082acdd181d02fa64/555f58ad/cr/s/q.jpg"
+                            alt="">
+                        <img src="//img10.360buyimg.com/pop/s590x470_jfs/t1/144473/16/13539/68633/5fa50223E6409747f/5967caf849a2a951.jpg.webp"
+                            alt="">
+                        <img src="//img11.360buyimg.com/pop/s590x470_jfs/t1/155019/3/6449/58174/5fb4db20E57600565/f59bfc3cd6d6f5f8.jpg.webp"
+                            alt="">
+                    </div>
+                    <div class="btns">
+                        <div class="active"></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="box1_img">
+                        <div style="display: block;">
+                            <img src="//img13.360buyimg.com/da/s380x300_jfs/t1/114798/20/2876/43838/5ea44c0fE00164f96/9efcebda6a2c51ec.png.webp"
+                                alt="">
+                            <img src="//img30.360buyimg.com/babel/s380x300_jfs/t1/151439/17/7110/46250/5fbc5e5aE8ac030f6/b1d83be8b97c9272.jpg.webp"
+                                alt="">
+                            <img src="//img10.360buyimg.com/babel/s380x300_jfs/t1/123262/14/19184/77172/5fb743a2E1b756bdd/50b9f18dbbe881be.jpg.webp"
+                                alt="">
+                        </div>
+                        <div>
+                            <img src="//img11.360buyimg.com/pop/s380x300_jfs/t1/98415/19/19088/42266/5e9bd182E2cb71372/fce641049678a47b.png.webp"
+                                alt="">
+                            <img src="//img11.360buyimg.com/babel/s380x300_jfs/t1/148120/37/15124/68516/5fb79592Ed675a9c6/9be37033ef62f671.jpg.webp"
+                                alt="">
+                            <img src="//img12.360buyimg.com/da/s380x300_jfs/t1/112633/1/2298/40301/5ea1373fE2684ad89/66aaf44a5397bc5a.png.webp"
+                                alt="">
+                        </div>
+                        <div>
+                            <img src="//img30.360buyimg.com/babel/s380x300_jfs/t1/155495/24/7165/58330/5fbc66f5E811db870/8c8e70f90f3d0a1d.jpg.webp"
+                                alt="">
+                            <img src="//img11.360buyimg.com/babel/s380x300_jfs/t1/148120/37/15124/68516/5fb79592Ed675a9c6/9be37033ef62f671.jpg.webp"
+                                alt="">
+                            <img src="//img30.360buyimg.com/babel/s380x300_jfs/t1/151439/17/7110/46250/5fbc5e5aE8ac030f6/b1d83be8b97c9272.jpg.webp"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="box2_foIn_Block">
+                        <div class="box1">
+                            <img src="img/section_logo.png" alt="">
+                            <div>
+                                <p>Hi!~欢迎逛京东</p>
+                                <p>登录/注册</p>
+                            </div>
+                        </div>
+                        <div class="box2">
+                            <div>新人福利</div>
+                            <div>PLUS会员</div>
+                        </div>
+                        <div class="liner">
+
+                        </div>
+                        <div class="box3">
+                            <div class="box3_title">
+                                <span>京东快报</span>
+                                <span>更多 ></span>
+                            </div>
+                            <div class="block_list">
+                                <div>推荐</div>
+                                <span>2019年度TWS真的...</span>
+                            </div>
+                            <div class="block_list">
+                                <div>推荐</div>
+                                <span>2019年度TWS真的...</span>
+                            </div>
+                            <div class="block_list">
+                                <div>推荐</div>
+                                <span>2019年度TWS真的...</span>
+                            </div>
+                            <div class="block_list">
+                                <div>推荐</div>
+                                <span>2019年度TWS真的...</span>
+                            </div>
+                        </div>
+                        <div class="liner">
+
+                        </div>
+                        <div class="box4">
+                            <div class="one_block">
+                                <div><img src="img/huafei1.png" alt=""><span>花费</span></div>
+                                <div><img src="img/jipiao1.png" alt=""><span>机票</span></div>
+                                <div><img src="img/jiudian1.png" alt=""><span>酒店</span></div>
+                                <div><img src="img/youxi1.png" alt=""><span>游戏</span></div>
+                                <div><img src="img/jiayouka1.png" alt=""><span>加油卡</span></div>
+                                <div><img src="img/huochepiao1.png" alt=""><span>火车票</span></div>
+                                <div><img src="img/zhongchou1.png" alt=""><span>众筹</span></div>
+                                <div><img src="img/licai1.png" alt=""><span>理财</span></div>
+                                <div><img src="img/baitiao1.png" alt=""><span>白条</span></div>
+                                <div><img src="img/dianying1.png" alt=""><span>电影票</span></div>
+                                <div><img src="img/qiye1.png" alt=""><span>企业购</span></div>
+                                <div><img src="img/lipinka1.png" alt=""><span>礼品卡</span></div>
+                            </div>
+                            <div class="two_block">
+
+                                <div class="show_block_1" style="display: block;">
+                                    <div>
+                                        <span class="active1">话费充值</span>
+                                        <span>流量充值</span>
+                                    </div>
+                                    <div class="input_1">
+                                        <label>号码</label>
+                                        <input type="text" name="" id="" placeholder="移动/联通/微信">
+                                    </div>
+                                    <div class="tog_block">
+                                        <div style="display: block;">
+                                            <div class="input_2">
+                                                <label>面值</label>
+                                                <select>100元
+                                                    <option value="">10元</option>
+                                                    <option value="">20元</option>
+                                                    <option value="">30元</option>
+                                                    <option value="">50元</option>
+                                                    <option value="">100元</option>
+                                                    <option value="">200元</option>
+                                                    <option value="">300元</option>
+                                                    <option value="">500元</option>
+                                                </select>
+                                            </div>
+                                            <span>￥98.0-￥100.0</span>
+                                            <div class="red_btn">
+                                                快速充值
+                                            </div>
+                                            <p>抢90减40话费神券</p>
+                                        </div>
+                                        <div>
+                                            <label>流量</label>
+                                            <select id="">
+                                                全国
+                                                <option value="">省内</option>
+                                            </select>
+                                            <select name="" id="">
+                                                50M
+                                                <option value="">100M</option>
+                                                <option value="">200M</option>
+                                                <option value="">300M</option>
+                                                <option value="">400M</option>
+                                                <option value="">500M</option>
+                                            </select>
+                                            <span>￥7.5-￥10.0</span>
+                                            <div class="last_blue_block">
+                                                <div>快速充值</div>
+                                                <span>App Store充值卡</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="close_block">
+                                        ×
+                                    </div>
+                                </div>
+                                <div class="show_block_2">
+                                    <div class="block_2_btn">
+                                        <span class="active2">国内机票</span>
+                                        <span>国际/港澳台</span>
+                                        <span>特惠</span>
+                                    </div>
+                                    <div class="block_2_contant">
+                                        <div class="list">
+                                            <div>
+                                                <div class="item_1">
+                                                    <input type="radio" checked>
+                                                    单程
+                                                    <input type="radio">
+                                                    往返
+                                                </div>
+                                                <div class="item_2">
+                                                    <div class="left">
+                                                        <p>出发</p>
+                                                        <p>返程</p>
+                                                    </div>
+                                                    <div class="right">
+                                                        <div></div>
+                                                        <div></div>
+                                                    </div>
+                                                </div>
+                                                <div class="item_3">
+                                                    <span>日期</span>
+                                                    <input type="text" placeholder="出发">
+                                                </div>
+                                                <div class="last_blue_block">
+                                                    <div>机票查询</div>
+                                                    <span>App Store充值卡</span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="item_1">
+                                                    <input type="radio" checked>
+                                                    单程
+                                                    <input type="radio">
+                                                    往返
+                                                </div>
+                                                <div class="item_2">
+                                                    <div class="left">
+                                                        <p>出发</p>
+                                                        <p>返程</p>
+                                                    </div>
+                                                    <div class="right">
+                                                        <div></div>
+                                                        <div></div>
+                                                    </div>
+                                                </div>
+                                                <div class="item_3">
+                                                    <span>出发</span>
+                                                    <input type="text" placeholder="出发">
+                                                </div>
+                                                <div class="last_blue_block">
+                                                    <div>机票查询</div>
+                                                    <span>国际机票任你搜</span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>我是图片</div>
+                                                <div>没错我也是</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="close_block">
+                                        ×
+                                    </div>
+                                </div>
+                                <div class="show_block_3">
+                                    <div class="block_3_btn">
+                                        <span class="active3">国内/港澳台</span>
+                                        <span>促销活动</span>
+                                    </div>
+                                   <div class="togmain">
+                                       <div class="tog_block_3">
+                                            <div>
+                                                <div class="item">
+                                                    <span>目的地</span>
+                                                    <input type="text" placeholder="北京">
+                                                </div>
+                                                <div class="item">
+                                                    <span>入店日期</span>
+                                                    <input type="text" placeholder="hello world">
+                                                </div>
+                                                <div class="item">
+                                                    <span>离店日期</span>
+                                                    <input type="text" placeholder="hello man">
+                                                </div>
+                                                <input type="text" placeholder="酒店/商圈/地标">
+                                                <div class="last_blue_block">
+                                                    <div>机票查询</div>
+                                                    <span>国际机票任你搜</span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>我是图片</div>
+                                                <div>我也是图片</div>
+                                            </div>
+                                       </div>
+                                   </div>
+                                    <div class="close_block">
+                                        ×
+                                    </div>
+                                </div>
+                                <div class="show_block_4">
+                                    <div class="block_btn_4">
+                                        <span class="active4">视频娱乐</span>
+                                        <span>点卡</span>
+                                        <span>QQ</span>
+                                    </div>
+                                    <div class="tog_main_block4">
+                                        <div class="block4_toggle">
+                                            <div>
+                                                <div class="item4">
+                                                    <span>服务类型</span>
+                                                    <input type="text" placeholder="腾讯视频">
+                                                </div>
+                                                <div class="item4">
+                                                    <span>充值时长</span>
+                                                    <input type="text" placeholder="0.5个月">
+                                                </div>
+                                                <span>￥9.00</span>
+                                                <div class="last_blue_block">
+                                                    <div>快速充值</div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="item4">
+                                                    <span>游戏</span>
+                                                    <input type="text" placeholder="游戏">
+                                                </div>
+                                                <div class="item4">
+                                                    <span>面值</span>
+                                                    <input type="text" placeholder="面值">
+                                                </div>
+                                                <span>￥9.00</span>
+                                                <div class="last_blue_block">
+                                                    <div>快速充值</div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="item4">
+                                                    <span>QQ</span>
+                                                    <input type="text" placeholder="Q币">
+                                                </div>
+                                                <div class="item4">
+                                                    <span>面值</span>
+                                                    <input type="text" placeholder="1元">
+                                                </div>
+                                                <span>￥9.00</span>
+                                                <div class="last_blue_block">
+                                                    <div>快速充值</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="close_block">
+                                        ×
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="togLeftBlock">
+                    <div>
+                        <div>我是内容1,我真的是</div>
+                        <div>我是内容2,我真的是</div>
+                        <div>我是内容3,我真的是</div>
+                        <div>我是内容4,我真的是</div>
+                        <div>我是内容5,我真的是</div>
+                        <div>我是内容6,我真的是</div>
+                        <div>我是内容7,我真的是</div>
+                        <div>我是内容8,我真的是</div>
+                        <div>我是内容9,我真的是</div>
+                        <div>我是内容10,我真的是</div>
+                        <div>我是内容11,我真的是</div>
+                        <div>我是内容12,我真的是</div>
+                        <div>我是内容13,我真的是</div>
+                        <div>我是内容14,我真的是</div>
+                        <div>我是内容15,我真的是</div>
+                        <div>我是内容16,我真的是</div>
+                        <div>我是内容17,我真的是</div>
+                        <div>我是内容18,我真的是</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 第二个模块 -->
+    </section>
+</body>
+
+</html>

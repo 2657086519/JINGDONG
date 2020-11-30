@@ -1,0 +1,891 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    --themeColor:#e40015;
+}
+.w{
+    width: 1190px;
+    margin: auto;
+}
+// 头部代码开始
+header{
+    // 页面顶部代码
+    .box1{
+        width: 100%;
+        height: 32px;
+        background-color: #e3e4e5;
+        border: 1px solid #dddddd;
+        .header_title{
+            font-size: 12px;
+            color: #999999;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+            >div{
+                height: 100%;
+            }
+            .left{
+                display: flex;
+                align-items: center;
+                img{
+                    margin: 0 6px;
+                } 
+            }
+            .right{
+                display: flex;
+                align-items: center;
+                img{
+                    width: 15px;
+                    height: 10px;
+                }
+                span{
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                }
+                > span:hover{
+                    color: #e1251b;
+                }
+                span:nth-child(2n+1){
+                    margin: 0 11px;
+                }
+                span:nth-child(2n){
+                    cursor: pointer;
+                }
+                a{
+                    color: #e1251b;
+                }
+                .active:hover{
+                    background-color: white;
+                }
+                .active{
+                    position: relative;
+                    >div{
+                        position: absolute;
+                        top: 31px;
+                        color: #999999;
+                        border: 1px solid #dddbdb;
+                        background-color: white;
+                        box-shadow: 0px 0px 2px gray;
+                        border-top: 0px solid black;
+                        display: none;
+                        z-index: 20;
+                    }
+                    .drop_down{
+                        width: 240px;
+                        height: 160px;
+                        div{
+                            width: 100%;
+                            display: flex;
+                            height: 30px;
+                            align-items: center;
+                            justify-content: space-between;
+                            span{
+                                width: 60px;
+                            }
+                            padding: 0 11px;
+                        }
+                    }
+                    .drop_down_2{
+                        width: 160px;
+                        height: 80px;
+                        div{
+                            width: 100%;
+                            display: flex;
+                            height: 25px;
+                            align-items: center;
+                            justify-content: space-between;
+                            span{
+                                width: 60px;
+                            }
+                            padding: 0 11px;
+                        }
+                    }
+                    .drop_down_3{
+                        width: 160px;
+                        height: 160px;
+                        div{
+                            width: 100%;
+                            display: flex;
+                            height: 25px;
+                            align-items: center;
+                            justify-content: space-between;
+                            span{
+                                width: 60px;
+                            }
+                            padding: 0 11px;
+                        }
+                    }
+                    .drop_down_4{
+                        right: -80px;
+                        p{
+                            width: 1190px;
+                            height: 300px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // 搜索块级的代码
+    .box2{
+        width: 100%;
+        height: 140px;
+        background-color: white;
+        .header_searchBlock{
+            position: relative;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            .left{
+                margin-left: 60px;
+                margin-right: 84px;
+            }
+            .center{
+                width: 750px;
+                height: 100%;
+                padding-top: 25px;
+                padding-left: 41px;
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+                .search_top{
+                    margin-bottom: 20px;
+                    >div:nth-child(1){
+                        display: flex;
+                        font-size: 12px;
+                        .search{
+                            display: flex;
+                            align-items: center;
+                            width: 492px;
+                            height: 36px;
+                            border: 2px solid #e1251b;
+                            margin-right: 11px;
+                            >img{
+                                margin: 0 5px;
+                            }
+                            input{
+                                width: 100%;
+                                border: 0px solid black;
+                                height: 100%;
+                                outline-style: none;
+                                font-size: 15px;
+                            }
+                            div{
+                                height: 36px;
+                                width: 58px;
+                                background-color: #e1251b;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                        }
+                        >div:nth-child(2){
+                            height: 36px;
+                            width: 132px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border: 1px solid gray;
+                        }
+                    }
+                    >div:nth-child(2){
+                        margin-top: 7px;
+                        font-size: 12px;
+                        a{
+                            color: #e1251b;
+                        }
+                        span{
+                            margin: 0 5px;
+                            color: #999999;
+                        }
+                    }
+                }
+                .search_bot{
+                    height: 38px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    font-size: 15px;
+                    a{
+                        color: #e1251b;
+                        margin: 0 11px;
+                        font-weight: 600;
+                    }
+                    span{
+                        margin: 0 11px;
+                    }
+                }
+            }
+            .right{
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+    }
+}
+
+// 主题内容代码开始
+section{
+    width: 100%;
+    background-color: #f4f4f4;
+    .box1{
+        padding-top: 10px;
+        .main_block{
+            height: 800px;
+            height: 472px;
+            display: flex;
+            position: relative;
+            >.left{
+                width: 190px;
+                height: 100%;
+                color: #333333;
+                font-size: 14px;
+                background-color: white;
+                padding-top: 10px;
+                margin-right: 10px;
+                >div{
+                    height: 25px;
+                    width: 100%;
+                    padding-left: 11px;
+                    display: flex;
+                    align-items: center;
+                    line-height: 25px;
+                    >span{
+                        cursor: pointer;
+                        margin: 0 2px;
+                    }
+                    >span:hover{
+                        color: #e1251b;
+                    }
+                }
+                >div:hover{
+                    background-color: #d9d9d9;
+                }
+            }
+            >.center{
+                width: 590px;
+                height: 470px;
+                position: relative;
+                margin-right: 10px;
+                >span{
+                    position: absolute;
+                    width: 30px;
+                    height: 100px;
+                    background-color: white;
+                    z-index: 5;
+                    top: 190px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1.5rem;
+                    cursor: pointer;
+                }
+                .prve{
+                    left: 0;
+                }
+                .next{
+                    right: 0;
+                }   
+                .banner{
+                    img{
+                        position: absolute;
+                        display: none;
+                    }
+                }
+                .btns{ 
+                    position: absolute;
+                    bottom: 20px;
+                    left: 20px;
+                    z-index: 10;
+                    .active{
+                        background-color: rgb(192, 183, 183);
+                    }
+                    div{
+                        float: left;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background-color: pink;
+                        cursor: pointer;
+                        margin: 0 5px;
+                    }
+                }
+
+            }
+            >.right{
+                display: flex;
+                height: 100%;
+                .box1_img{
+                    display: flex;
+                    width: 190px;
+                    height: 470px;
+                    overflow: hidden;
+                    position: relative;
+                    margin-right: 10px;
+                    img{
+                        width: 190px;
+                        height: 150px;
+                        margin-bottom: 6px;
+                    }
+                    >div{
+                        position: absolute;
+                        display: none;
+                    }
+                    div>img:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+                .box2_foIn_Block{
+                    width: 190px;
+                    height: 100%;
+                    // border: 1px solid black;
+                    background-color: white;
+                    font-size: 12px;
+                    padding-top: 10px;
+                    >.box1{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        img{
+                            margin-right: 10px;
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 15px;
+                        }
+                        div{
+                            >p:nth-child(1){
+                                margin-bottom: 6px;
+                            }
+                        }
+                    }
+                    >.box2{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 10px;
+                        >div{
+                            width: 75px;
+                            height: 25px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 13px;
+                            margin: 0 5px;
+                        }
+                        >div:nth-child(1){
+                            background-color: #e1251b;
+                            color: white;
+                        }
+                        >div:nth-child(2){
+                            background-color: #363634;
+                            color: #e5d790;
+                        }
+                    }
+                    >.liner{
+                        width: 100%;
+                        height: 1px;
+                        background: linear-gradient(270deg,white,#eeeeee,#eeeeee,white);
+                        margin: 4px 0;
+                    }
+                    >.box3{
+                        padding: 0 13px;
+                        >.box3_title{
+                            display: flex;
+                            justify-content: space-between;
+                            margin-bottom: 8px;
+                            >span:nth-child(1){
+                                font-size: 14px;
+                                font-weight: 600;
+                            }
+                            >span:nth-child(2){
+                                color: #999;
+                            }
+                        }
+                        >.block_list{
+                            display: flex;
+                            >div{
+                                display: inline-block;
+                                position: relative;
+                                font-size: 12px;
+                                height: 16px;
+                                width: 35px;
+                                line-height: 16px;
+                                text-align: center;
+                                vertical-align: 0;
+                                color: #e1251b;
+                                background-color: rgba(225,37,27,.08);
+                                margin-right: 6px;
+                                margin-bottom: 8px;
+                            }
+                            >span{
+                                color: #666;
+                            }
+                        }
+                    }
+                    >.box4{
+                        overflow: hidden;
+                        width: 100%;
+                        height: 238px;
+                        // background-color: pink;
+                        position: relative;
+                        .one_block{
+                            overflow: hidden;
+                            width: 100%;
+                            display: flex;
+                            flex-wrap: wrap;
+                            >div:nth-child(-n+4){
+                                position: relative;
+                                // bottom: 29px;
+                                transition: all 0.3s;
+                                // border: 1px solid black;
+                                bottom: 0;
+                            }
+                            >div:nth-child(1){
+                                // bottom: 60px;
+                                z-index: 1;
+                            }
+                            >div:nth-child(4){
+                                // bottom: 60px;
+                                bottom: 0;
+                                background-color: white;
+                                z-index: 2;
+                            }
+                            >div{
+                                width: 33.3%;
+                                height: 55px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                cursor: pointer;
+                                transition: all 0.5s;
+                                >img{
+                                    width: 28px;
+                                    height: 28px;
+                                    transition: all 0.3s;
+                                }
+                                >span{
+                                    transition: all 0.3s;
+                                    height: 32px;
+                                    width: 100%;    
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+                            }
+                            >div:hover span{
+                                color: #e1251b;
+                            }
+                        }
+                        .two_block{
+                            width: 100%;
+                            height: 206px;
+                            position: absolute;
+                            // top: 28px;
+                            top:240px;
+                            transition: all 0.3s;
+                            z-index: 20;
+                            >div{
+                                width: 100%;
+                                height: 100%;
+                                background-color: white;
+                                display: none;
+                                padding: 0 15px;
+                                position: relative;
+                            }
+                            .show_block_1{
+                                padding-top: 11px;
+                                >div:nth-child(1){
+                                    margin-bottom: 10px;
+                                    span{
+                                        margin: 0 3px;
+                                        cursor: pointer;
+                                    }
+                                    .active1{
+                                        color: var(--themeColor);
+                                    }
+                                }
+                                .input_1{
+                                    display:flex;
+                                    height: 20px;
+                                    margin-bottom: 10px;
+                                    input{
+                                        width: 124px;
+                                        height: 100%;
+                                        border: 1px solid #e7e7e7;
+                                        font-size: 12px;
+                                        color: #e7e7e7;
+                                        text-align: center;
+                                    }
+                                    label{
+                                        font-size: 12px;
+                                        color: #666666;
+                                        margin-right: 5px;
+                                    }
+                                }
+                                .tog_block{
+                                    >div{
+                                        display: none;
+                                    }
+                                    >div:nth-child(1){
+                                        .input_2{
+                                            display: flex;
+                                            height: 20px;
+                                            select{
+                                                width: 124px;
+                                                height: 100%;
+                                                border: 1px solid #e7e7e7;
+                                                font-size: 12px;
+                                                color: #e7e7e7;
+                                                text-align: center;
+                                            }
+                                            label{
+                                                font-size: 12px;
+                                                color: #666666;
+                                                margin-right: 5px;
+                                            }
+                                        }
+                                        >span{
+                                            color: #e1251b;
+                                            margin: 5px 0;
+                                        }
+                                        .red_btn{
+                                            width: 60px;
+                                            height: 20px;
+                                            color: white;
+                                            font-size: 12px;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            background-color: #e1251b;
+                                            border-radius: 15px;
+                                            margin: 5px 0;
+                                        }
+                                        p{
+                                            color: #5476db;
+                                        }
+
+                                    }
+                                    >div:nth-child(2){
+                                        select{
+                                            height: 100%;
+                                            border: 1px solid #e7e7e7;
+                                            font-size: 12px;
+                                            color: #e7e7e7;
+                                            text-align: center;
+                                        }
+                                        label{
+                                            font-size: 12px;
+                                            color: #666666;
+                                            margin-right: 5px;
+                                        }
+                                        >span{
+                                            color: #e1251b;
+                                        }
+                                        .last_blue_block{
+                                            display: flex;
+                                            height: 22px;
+                                            align-items: center;
+                                            div{
+                                                width: 60px;
+                                                height: 20px;
+                                                color: white;
+                                                font-size: 12px;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                background-color: #e1251b;
+                                                border-radius: 15px;
+                                                margin: 5px 0;
+                                            }
+                                            span{
+                                                color: #5476db;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .show_block_2{
+                                .block_2_btn{
+                                    .active2{
+                                        color: #e1251b;
+                                    }
+                                    span{
+                                        margin: 0 2px;
+                                        cursor: pointer;
+                                    }
+                                }
+                                .block_2_contant {
+                                    width: 100%;
+                                    overflow: hidden;
+                                    .list {
+                                        width: 300%;
+                                        display: flex;
+                                        transition: all 0.3s;
+                                        >div:nth-child(3){
+                                            display: flex;
+                                            div{
+                                                height: 70%;
+                                                border:1px solid black;
+                                                flex:1;
+                                            }
+                                        }
+                                        >div {
+                                            width: 100%;
+                                            // margin-right:20px;
+                                            >div{
+                                                margin: 8px 0;
+                                            }
+                                            .item_1 {
+                                                input {
+                                                    margin: 0 8px;
+                                                }
+                                            }
+                                    
+                                            .item_2 {
+                                                display: flex;
+                                            .left {
+                                                p {
+                                                    width: 40px;
+                                                }
+                                            }
+                                    
+                                            .right {
+                                                div {
+                                                    width: 120px;
+                                                    height: 20px;
+                                                    border: 1px solid #d7d7d7;
+                                                }
+                                            }
+                                            }
+                                    
+                                            .item_3 {
+                                                display: flex;
+                                            span {
+                                                width: 40px;
+                                            }
+                                    
+                                            input {
+                                                width: 120px;
+                                            }
+                                            }
+                                    
+                                            .last_blue_block {
+                                                display: flex;
+                                                height: 22px;
+                                                align-items: center;
+                                                div{
+                                                    width: 60px;
+                                                    height: 20px;
+                                                    color: white;
+                                                    font-size: 12px;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    background-color: #e1251b;
+                                                    border-radius: 15px;
+                                                    margin: 5px 0;
+                                                }
+                                                span{
+                                                    color: #5476db;
+                                                }
+                                            }
+                                        }
+                                    }
+                                  }
+                            }
+                            .show_block_3{
+                                .block_3_btn {
+                                    .active3{
+                                        color: #e1251b;
+                                    }
+                                    span {
+                                      cursor: pointer;
+                                    }
+                                  }
+                                .togmain {
+                                    margin-top: 10px;
+                                    width: 100%;
+                                    overflow: hidden;
+                                    .tog_block_3 {
+                                        display: flex;
+                                        width: 200%;
+                                        transition: all 0.3s;
+                                        >div{
+                                            width: 100%;
+                                        }
+                                        div:nth-child(1){
+                                            .item {
+                                                display: flex;
+                                                justify-content: space-between;
+                                                margin: 6px 0;
+                                                span {
+                                                    width: 30%;
+                                                }
+                                        
+                                                input {
+                                                    text-align: center;
+                                                    width: 60%;
+                                                    height: 20px;
+                                                }
+                                            }
+                                    
+                                            >input {
+                                                width: 100%;
+                                                text-align: center;
+                                                margin-bottom: 5px;
+                                            }
+                                    
+                                            .last_blue_block {
+                                                display: flex;
+                                                height: 22px;
+                                                align-items: center;
+                                                div{
+                                                    width: 60px;
+                                                    height: 20px;
+                                                    color: white;
+                                                    font-size: 12px;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    background-color: #e1251b;
+                                                    border-radius: 15px;
+                                                    margin: 5px 0;
+                                                }
+                                                span{
+                                                    color: #5476db;
+                                                }
+                                            }
+                                        }
+                                        >div:nth-child(2){
+                                            width: 100%;
+                                            display: flex;
+                                            div{
+                                                border: 1px solid #000;
+                                                width: 50%;
+                                                height: 70px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .show_block_4{
+                                div.block_btn_4 {
+                                    width: 100%;
+                                    span {
+                                        cursor: pointer;
+                                    }
+                                    .active4{
+                                        color: #e1251b;
+                                    }
+                                }
+                                
+                                .tog_main_block4 {
+                                    width: 100%;
+                                    overflow: hidden;
+                                    .block4_toggle {
+                                        width: 300%;
+                                        display: flex;
+                                        transition: all 0.3s;
+                                        >div {
+                                            width: 100%;
+                                            padding-top: 5px;
+                                            .item4 {
+                                                display: flex;
+                                                justify-content: space-between;
+                                                span {
+                                                    padding-left: 8px;
+                                                    width: 40%;
+                                                }
+                                        
+                                                input {
+                                                    width: 60%;
+                                                    height: 20px;
+                                                }
+                                            }
+                                        
+                                            >span {
+                                                color: #e1251b;
+                                            }
+                                    
+                                            .last_blue_block {
+                                                div {
+                                                    width: 60px;
+                                                    height: 20px;
+                                                    color: white;
+                                                    font-size: 12px;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    background-color: #e1251b;
+                                                    border-radius: 15px;
+                                                    margin: 5px 0;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .close_block{
+                                cursor: pointer;
+                                position: absolute;
+                                width: 20px;
+                                height: 20px;
+                                left: 50%;
+                                bottom: 12px;
+                                margin-left: -10px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                z-index: 1;
+                                background: #fff;
+                                -webkit-transition: all .2s ease;
+                                transition: all .2s ease;
+                                border-radius: 100%;
+                                color: #999;
+                                font-size: 18px;
+                            }
+                            .close_block:hover{
+                                background-color: #e40015;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+            >.togLeftBlock{
+                position: absolute;
+                height: 100%;
+                width: 84%;
+                right:0;
+                z-index: 50;
+                box-shadow: 0px 0px 2px gray;
+                display: none;
+                >div{
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    >div{
+                        width: 100%;
+                        height: 100%;
+                        background-color: white;
+                        position: absolute;
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,830 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  --themeColor: #e40015;
+}
+.w {
+  width: 1190px;
+  margin: auto;
+}
+header .box1 {
+  width: 100%;
+  height: 32px;
+  background-color: #e3e4e5;
+  border: 1px solid #dddddd;
+}
+header .box1 .header_title {
+  font-size: 12px;
+  color: #999999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+header .box1 .header_title > div {
+  height: 100%;
+}
+header .box1 .header_title .left {
+  display: flex;
+  align-items: center;
+}
+header .box1 .header_title .left img {
+  margin: 0 6px;
+}
+header .box1 .header_title .right {
+  display: flex;
+  align-items: center;
+}
+header .box1 .header_title .right img {
+  width: 15px;
+  height: 10px;
+}
+header .box1 .header_title .right span {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header .box1 .header_title .right > span:hover {
+  color: #e1251b;
+}
+header .box1 .header_title .right span:nth-child(2n+1) {
+  margin: 0 11px;
+}
+header .box1 .header_title .right span:nth-child(2n) {
+  cursor: pointer;
+}
+header .box1 .header_title .right a {
+  color: #e1251b;
+}
+header .box1 .header_title .right .active:hover {
+  background-color: white;
+}
+header .box1 .header_title .right .active {
+  position: relative;
+}
+header .box1 .header_title .right .active > div {
+  position: absolute;
+  top: 31px;
+  color: #999999;
+  border: 1px solid #dddbdb;
+  background-color: white;
+  box-shadow: 0px 0px 2px gray;
+  border-top: 0px solid black;
+  display: none;
+  z-index: 20;
+}
+header .box1 .header_title .right .active .drop_down {
+  width: 240px;
+  height: 160px;
+}
+header .box1 .header_title .right .active .drop_down div {
+  width: 100%;
+  display: flex;
+  height: 30px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 11px;
+}
+header .box1 .header_title .right .active .drop_down div span {
+  width: 60px;
+}
+header .box1 .header_title .right .active .drop_down_2 {
+  width: 160px;
+  height: 80px;
+}
+header .box1 .header_title .right .active .drop_down_2 div {
+  width: 100%;
+  display: flex;
+  height: 25px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 11px;
+}
+header .box1 .header_title .right .active .drop_down_2 div span {
+  width: 60px;
+}
+header .box1 .header_title .right .active .drop_down_3 {
+  width: 160px;
+  height: 160px;
+}
+header .box1 .header_title .right .active .drop_down_3 div {
+  width: 100%;
+  display: flex;
+  height: 25px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 11px;
+}
+header .box1 .header_title .right .active .drop_down_3 div span {
+  width: 60px;
+}
+header .box1 .header_title .right .active .drop_down_4 {
+  right: -80px;
+}
+header .box1 .header_title .right .active .drop_down_4 p {
+  width: 1190px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+header .box2 {
+  width: 100%;
+  height: 140px;
+  background-color: white;
+}
+header .box2 .header_searchBlock {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header .box2 .header_searchBlock .left {
+  margin-left: 60px;
+  margin-right: 84px;
+}
+header .box2 .header_searchBlock .center {
+  width: 750px;
+  height: 100%;
+  padding-top: 25px;
+  padding-left: 41px;
+}
+header .box2 .header_searchBlock .center img {
+  width: 20px;
+  height: 20px;
+}
+header .box2 .header_searchBlock .center .search_top {
+  margin-bottom: 20px;
+}
+header .box2 .header_searchBlock .center .search_top > div:nth-child(1) {
+  display: flex;
+  font-size: 12px;
+}
+header .box2 .header_searchBlock .center .search_top > div:nth-child(1) .search {
+  display: flex;
+  align-items: center;
+  width: 492px;
+  height: 36px;
+  border: 2px solid #e1251b;
+  margin-right: 11px;
+}
+header .box2 .header_searchBlock .center .search_top > div:nth-child(1) .search > img {
+  margin: 0 5px;
+}
+header .box2 .header_searchBlock .center .search_top > div:nth-child(1) .search input {
+  width: 100%;
+  border: 0px solid black;
+  height: 100%;
+  outline-style: none;
+  font-size: 15px;
+}
+header .box2 .header_searchBlock .center .search_top > div:nth-child(1) .search div {
+  height: 36px;
+  width: 58px;
+  background-color: #e1251b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .box2 .header_searchBlock .center .search_top > div:nth-child(1) > div:nth-child(2) {
+  height: 36px;
+  width: 132px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+}
+header .box2 .header_searchBlock .center .search_top > div:nth-child(2) {
+  margin-top: 7px;
+  font-size: 12px;
+}
+header .box2 .header_searchBlock .center .search_top > div:nth-child(2) a {
+  color: #e1251b;
+}
+header .box2 .header_searchBlock .center .search_top > div:nth-child(2) span {
+  margin: 0 5px;
+  color: #999999;
+}
+header .box2 .header_searchBlock .center .search_bot {
+  height: 38px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+header .box2 .header_searchBlock .center .search_bot a {
+  color: #e1251b;
+  margin: 0 11px;
+  font-weight: 600;
+}
+header .box2 .header_searchBlock .center .search_bot span {
+  margin: 0 11px;
+}
+header .box2 .header_searchBlock .right {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+section {
+  width: 100%;
+  background-color: #f4f4f4;
+}
+section .box1 {
+  padding-top: 10px;
+}
+section .box1 .main_block {
+  height: 800px;
+  height: 472px;
+  display: flex;
+  position: relative;
+}
+section .box1 .main_block > .left {
+  width: 190px;
+  height: 100%;
+  color: #333333;
+  font-size: 14px;
+  background-color: white;
+  padding-top: 10px;
+  margin-right: 10px;
+}
+section .box1 .main_block > .left > div {
+  height: 25px;
+  width: 100%;
+  padding-left: 11px;
+  display: flex;
+  align-items: center;
+  line-height: 25px;
+}
+section .box1 .main_block > .left > div > span {
+  cursor: pointer;
+  margin: 0 2px;
+}
+section .box1 .main_block > .left > div > span:hover {
+  color: #e1251b;
+}
+section .box1 .main_block > .left > div:hover {
+  background-color: #d9d9d9;
+}
+section .box1 .main_block > .center {
+  width: 590px;
+  height: 470px;
+  position: relative;
+  margin-right: 10px;
+}
+section .box1 .main_block > .center > span {
+  position: absolute;
+  width: 30px;
+  height: 100px;
+  background-color: white;
+  z-index: 5;
+  top: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+section .box1 .main_block > .center .prve {
+  left: 0;
+}
+section .box1 .main_block > .center .next {
+  right: 0;
+}
+section .box1 .main_block > .center .banner img {
+  position: absolute;
+  display: none;
+}
+section .box1 .main_block > .center .btns {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 10;
+}
+section .box1 .main_block > .center .btns .active {
+  background-color: #c0b7b7;
+}
+section .box1 .main_block > .center .btns div {
+  float: left;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: pink;
+  cursor: pointer;
+  margin: 0 5px;
+}
+section .box1 .main_block > .right {
+  display: flex;
+  height: 100%;
+}
+section .box1 .main_block > .right .box1_img {
+  display: flex;
+  width: 190px;
+  height: 470px;
+  overflow: hidden;
+  position: relative;
+  margin-right: 10px;
+}
+section .box1 .main_block > .right .box1_img img {
+  width: 190px;
+  height: 150px;
+  margin-bottom: 6px;
+}
+section .box1 .main_block > .right .box1_img > div {
+  position: absolute;
+  display: none;
+}
+section .box1 .main_block > .right .box1_img div > img:last-child {
+  margin-bottom: 0;
+}
+section .box1 .main_block > .right .box2_foIn_Block {
+  width: 190px;
+  height: 100%;
+  background-color: white;
+  font-size: 12px;
+  padding-top: 10px;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box1 img {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box1 div > p:nth-child(1) {
+  margin-bottom: 6px;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box2 > div {
+  width: 75px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  margin: 0 5px;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box2 > div:nth-child(1) {
+  background-color: #e1251b;
+  color: white;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box2 > div:nth-child(2) {
+  background-color: #363634;
+  color: #e5d790;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .liner {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(270deg, white, #eeeeee, #eeeeee, white);
+  margin: 4px 0;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box3 {
+  padding: 0 13px;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box3 > .box3_title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box3 > .box3_title > span:nth-child(1) {
+  font-size: 14px;
+  font-weight: 600;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box3 > .box3_title > span:nth-child(2) {
+  color: #999;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box3 > .block_list {
+  display: flex;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box3 > .block_list > div {
+  display: inline-block;
+  position: relative;
+  font-size: 12px;
+  height: 16px;
+  width: 35px;
+  line-height: 16px;
+  text-align: center;
+  vertical-align: 0;
+  color: #e1251b;
+  background-color: rgba(225, 37, 27, 0.08);
+  margin-right: 6px;
+  margin-bottom: 8px;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box3 > .block_list > span {
+  color: #666;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 {
+  overflow: hidden;
+  width: 100%;
+  height: 238px;
+  position: relative;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .one_block {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .one_block > div:nth-child(-n+4) {
+  position: relative;
+  transition: all 0.3s;
+  bottom: 0;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .one_block > div:nth-child(1) {
+  z-index: 1;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .one_block > div:nth-child(4) {
+  bottom: 0;
+  background-color: white;
+  z-index: 2;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .one_block > div {
+  width: 33.3%;
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .one_block > div > img {
+  width: 28px;
+  height: 28px;
+  transition: all 0.3s;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .one_block > div > span {
+  transition: all 0.3s;
+  height: 32px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .one_block > div:hover span {
+  color: #e1251b;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block {
+  width: 100%;
+  height: 206px;
+  position: absolute;
+  top: 240px;
+  transition: all 0.3s;
+  z-index: 20;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block > div {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: none;
+  padding: 0 15px;
+  position: relative;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_1 {
+  padding-top: 11px;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_1 > div:nth-child(1) {
+  margin-bottom: 10px;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_1 > div:nth-child(1) span {
+  margin: 0 3px;
+  cursor: pointer;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_1 > div:nth-child(1) .active1 {
+  color: var(--themeColor);
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_1 .input_1 {
+  display: flex;
+  height: 20px;
+  margin-bottom: 10px;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_1 .input_1 input {
+  width: 124px;
+  height: 100%;
+  border: 1px solid #e7e7e7;
+  font-size: 12px;
+  color: #e7e7e7;
+  text-align: center;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_1 .input_1 label {
+  font-size: 12px;
+  color: #666666;
+  margin-right: 5px;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_1 .tog_block > div {
+  display: none;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_1 .tog_block > div:nth-child(1) .input_2 {
+  display: flex;
+  height: 20px;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_1 .tog_block > div:nth-child(1) .input_2 select {
+  width: 124px;
+  height: 100%;
+  border: 1px solid #e7e7e7;
+  font-size: 12px;
+  color: #e7e7e7;
+  text-align: center;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_1 .tog_block > div:nth-child(1) .input_2 label {
+  font-size: 12px;
+  color: #666666;
+  margin-right: 5px;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_1 .tog_block > div:nth-child(1) > span {
+  color: #e1251b;
+  margin: 5px 0;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_1 .tog_block > div:nth-child(1) .red_btn {
+  width: 60px;
+  height: 20px;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e1251b;
+  border-radius: 15px;
+  margin: 5px 0;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_1 .tog_block > div:nth-child(1) p {
+  color: #5476db;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_1 .tog_block > div:nth-child(2) select {
+  height: 100%;
+  border: 1px solid #e7e7e7;
+  font-size: 12px;
+  color: #e7e7e7;
+  text-align: center;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_1 .tog_block > div:nth-child(2) label {
+  font-size: 12px;
+  color: #666666;
+  margin-right: 5px;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_1 .tog_block > div:nth-child(2) > span {
+  color: #e1251b;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_1 .tog_block > div:nth-child(2) .last_blue_block {
+  display: flex;
+  height: 22px;
+  align-items: center;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_1 .tog_block > div:nth-child(2) .last_blue_block div {
+  width: 60px;
+  height: 20px;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e1251b;
+  border-radius: 15px;
+  margin: 5px 0;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_1 .tog_block > div:nth-child(2) .last_blue_block span {
+  color: #5476db;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_2 .block_2_btn .active2 {
+  color: #e1251b;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_2 .block_2_btn span {
+  margin: 0 2px;
+  cursor: pointer;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_2 .block_2_contant {
+  width: 100%;
+  overflow: hidden;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_2 .block_2_contant .list {
+  width: 300%;
+  display: flex;
+  transition: all 0.3s;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_2 .block_2_contant .list > div:nth-child(3) {
+  display: flex;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_2 .block_2_contant .list > div:nth-child(3) div {
+  height: 70%;
+  border: 1px solid black;
+  flex: 1;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_2 .block_2_contant .list > div {
+  width: 100%;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_2 .block_2_contant .list > div > div {
+  margin: 8px 0;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_2 .block_2_contant .list > div .item_1 input {
+  margin: 0 8px;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_2 .block_2_contant .list > div .item_2 {
+  display: flex;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_2 .block_2_contant .list > div .item_2 .left p {
+  width: 40px;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_2 .block_2_contant .list > div .item_2 .right div {
+  width: 120px;
+  height: 20px;
+  border: 1px solid #d7d7d7;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_2 .block_2_contant .list > div .item_3 {
+  display: flex;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_2 .block_2_contant .list > div .item_3 span {
+  width: 40px;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_2 .block_2_contant .list > div .item_3 input {
+  width: 120px;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_2 .block_2_contant .list > div .last_blue_block {
+  display: flex;
+  height: 22px;
+  align-items: center;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_2 .block_2_contant .list > div .last_blue_block div {
+  width: 60px;
+  height: 20px;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e1251b;
+  border-radius: 15px;
+  margin: 5px 0;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_2 .block_2_contant .list > div .last_blue_block span {
+  color: #5476db;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_3 .block_3_btn .active3 {
+  color: #e1251b;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_3 .block_3_btn span {
+  cursor: pointer;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_3 .togmain {
+  margin-top: 10px;
+  width: 100%;
+  overflow: hidden;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_3 .togmain .tog_block_3 {
+  display: flex;
+  width: 200%;
+  transition: all 0.3s;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_3 .togmain .tog_block_3 > div {
+  width: 100%;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_3 .togmain .tog_block_3 div:nth-child(1) .item {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 0;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_3 .togmain .tog_block_3 div:nth-child(1) .item span {
+  width: 30%;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_3 .togmain .tog_block_3 div:nth-child(1) .item input {
+  text-align: center;
+  width: 60%;
+  height: 20px;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_3 .togmain .tog_block_3 div:nth-child(1) > input {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_3 .togmain .tog_block_3 div:nth-child(1) .last_blue_block {
+  display: flex;
+  height: 22px;
+  align-items: center;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_3 .togmain .tog_block_3 div:nth-child(1) .last_blue_block div {
+  width: 60px;
+  height: 20px;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e1251b;
+  border-radius: 15px;
+  margin: 5px 0;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_3 .togmain .tog_block_3 div:nth-child(1) .last_blue_block span {
+  color: #5476db;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_3 .togmain .tog_block_3 > div:nth-child(2) {
+  width: 100%;
+  display: flex;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_3 .togmain .tog_block_3 > div:nth-child(2) div {
+  border: 1px solid #000;
+  width: 50%;
+  height: 70px;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_4 div.block_btn_4 {
+  width: 100%;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_4 div.block_btn_4 span {
+  cursor: pointer;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_4 div.block_btn_4 .active4 {
+  color: #e1251b;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_4 .tog_main_block4 {
+  width: 100%;
+  overflow: hidden;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_4 .tog_main_block4 .block4_toggle {
+  width: 300%;
+  display: flex;
+  transition: all 0.3s;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_4 .tog_main_block4 .block4_toggle > div {
+  width: 100%;
+  padding-top: 5px;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_4 .tog_main_block4 .block4_toggle > div .item4 {
+  display: flex;
+  justify-content: space-between;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_4 .tog_main_block4 .block4_toggle > div .item4 span {
+  padding-left: 8px;
+  width: 40%;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_4 .tog_main_block4 .block4_toggle > div .item4 input {
+  width: 60%;
+  height: 20px;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_4 .tog_main_block4 .block4_toggle > div > span {
+  color: #e1251b;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .show_block_4 .tog_main_block4 .block4_toggle > div .last_blue_block div {
+  width: 60px;
+  height: 20px;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e1251b;
+  border-radius: 15px;
+  margin: 5px 0;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .close_block {
+  cursor: pointer;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  bottom: 12px;
+  margin-left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background: #fff;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border-radius: 100%;
+  color: #999;
+  font-size: 18px;
+}
+section .box1 .main_block > .right .box2_foIn_Block > .box4 .two_block .close_block:hover {
+  background-color: #e40015;
+  color: white;
+}
+section .box1 .main_block > .togLeftBlock {
+  position: absolute;
+  height: 100%;
+  width: 84%;
+  right: 0;
+  z-index: 50;
+  box-shadow: 0px 0px 2px gray;
+  display: none;
+}
+section .box1 .main_block > .togLeftBlock > div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+section .box1 .main_block > .togLeftBlock > div > div {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  display: none;
+}
